@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-//const cors = require('cors');
 
 const pharmacistsRoute = require('./routes/pharmacists');
 const patientsRoutes = require('./routes/patients');
 const physiciansRoutes = require('./routes/physicians');
+
 app.use(pharmacistsRoute);
 app.use(patientsRoutes);
 app.use(physiciansRoutes);
