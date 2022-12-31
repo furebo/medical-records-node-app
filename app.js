@@ -10,8 +10,8 @@ app.use(pharmacistsRoute);
 app.use(patientsRoutes);
 app.use(physiciansRoutes);
 app.use(welcomeRoute);
-
-const port = 8080 || process.env.port;
+ 
+const port = 5000 || process.env.port;
 app.listen(port,()=>{
     console.log("App is running very well");
 })
